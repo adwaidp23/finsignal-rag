@@ -10,10 +10,18 @@ __pycache__/
 *$py.class
 *.so
 
-# Data and Cache
-data/
+# Raw SEC filing HTML — scratch space, not needed after parsing into SQLite
+data/sec_filings/
+
+# SQLite WAL/SHM side-files — not needed in git (main .db is committed)
+data/*.db-shm
+data/*.db-wal
+
+# Large scratch data
+*.pkl.tmp
+
 .pytest_cache/
 .coverage
 
-# Streamlit
-.streamlit/
+# Streamlit local secrets (use platform secrets on deploy)
+.streamlit/secrets.toml

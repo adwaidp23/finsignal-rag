@@ -1,0 +1,184 @@
+{
+  "evaluated_at": "2026-07-17T16:32:50.587341",
+  "k": 5,
+  "total_queries": 10,
+  "hits": 7,
+  "hit_rate": 0.7,
+  "results": [
+    {
+      "ticker": "AAPL",
+      "query": "What are Apple's main risk factors related to supply chain?",
+      "expected_keywords": [
+        "supply chain",
+        "supplier",
+        "manufacturing",
+        "component"
+      ],
+      "hit": true,
+      "top_chunks": [
+        ". In addition, component suppliers may fail, be subject to consolidation within a particular industry, or decide to concentrate on the production of common components instead of components customized to meet the Company&#8217;s requirements, further limiting the Company&#8217;s ability to obtain sufficient quantities of components on commercially reasonable terms, or at all. Therefore, the Company remains subject to significant risks of supply shortages and price increases that can materially adversely affect its business, results of operations, financial condition and stock price. Apple Inc",
+        ". Adverse economic conditions can also lead to increased credit and collectibility risk on the Company&#8217;s trade receivables; the failure of derivative counterparties and other financial institutions; limitations on the Company&#8217;s ability to issue new debt; reduced liquidity; and declines in the fair values of the Company&#8217;s financial instruments. These and other impacts can materially adversely affect the Company&#8217;s business, results of operations, financial condition and stock price. Apple Inc. | 2025 Form 10-K | 5 The Company&#8217;s business can be impacted by political events, trade and other international disputes, geopolitical tensions, conflict, terrorism, natural disasters, public health issues, industrial accidents and other business interruptions",
+        ". Major public health issues, including pandemics such as the COVID-19 pandemic, have adversely affected, and could in the future materially adversely affect, the Company due to their impact on the global economy and demand for consumer products; the imposition of protective public safety measures, such as stringent employee travel restrictions and limitations on freight services and the movement of products between regions; and disruptions in the Company&#8217;s operations, supply chain and sales and distribution channels, resulting in interruptions to the supply of current products and offering of existing services, and delays in production ramps of new products and development of new services. Apple Inc",
+        ". Such events can make it difficult or impossible for the Company to manufacture and deliver products to its customers, create delays and inefficiencies in the Company&#8217;s supply and manufacturing chain, result in slowdowns and outages to the Company&#8217;s service offerings, increase the Company&#8217;s costs, and negatively impact consumer spending and demand in affected areas. The Company&#8217;s operations are also subject to the risks of industrial accidents at its suppliers and contract manufacturers. While the Company&#8217;s suppliers are required to maintain safe working environments and operations, an industrial accident could occur and could result in serious injuries or loss of life, disruption to the Company&#8217;s business, and harm to the Company&#8217;s reputation",
+        ". If the Company is unable to nurture its culture, it could materially adversely affect the Company&#8217;s ability to recruit and retain the highly skilled employees who are critical to its success, and could otherwise materially adversely affect the Company&#8217;s business, reputation, results of operations, financial condition and stock price. Apple Inc. | 2025 Form 10-K | 10 The Company depends on the performance of carriers and other resellers. The Company distributes its products and certain of its services through cellular network carriers and other resellers, many of which distribute products and services from competitors. Resellers offer financing, installment payment plans or subsidies for users&#8217; purchases of devices, and such plans may be discontinued or modified any time"
+      ],
+      "matched_keyword": "supplier"
+    },
+    {
+      "ticker": "AAPL",
+      "query": "How did Apple's Services segment perform in terms of revenue?",
+      "expected_keywords": [
+        "services",
+        "revenue",
+        "subscription",
+        "app store"
+      ],
+      "hit": true,
+      "top_chunks": [
+        ". Apple Inc. | 2025 Form 10-K | 22 Products and Services Performance The following table shows net sales by category for 2025, 2024 and 2023 (dollars in millions): 2025 Change 2024 Change 2023 iPhone $ 209,586 4 % $ 201,183 &#8212; % $ 200,583 Mac 33,708 12 % 29,984 2 % 29,357 iPad 28,023 5 % 26,694 (6) % 28,300 Wearables, Home and Accessories 35,686 (4) % 37,005 (7) % 39,845 Services (1) 109,158 14 % 96,169 13 % 85,200 Total net sales $ 416,161 6 % $ 391,035 2 % $ 383,285 (1) Services net sales include amortization of the deferred value of services bundled in the sales price of certain products. iPhone iPhone net sales increased during 2025 compared to 2024 due to higher net sales of Pro models",
+        ". Apple Inc. | 2025 Form 10-K | 35 The following table shows disaggregated net sales, as well as the portion of total net sales that was previously deferred, for 2025, 2024 and 2023 (in millions): 2025 2024 2023 iPhone $ 209,586 $ 201,183 $ 200,583 Mac 33,708 29,984 29,357 iPad 28,023 26,694 28,300 Wearables, Home and Accessories 35,686 37,005 39,845 Services (1) 109,158 96,169 85,200 Total net sales $ 416,161 $ 391,035 $ 383,285 Portion of total net sales that was included in deferred revenue as of the beginning of the period $ 8,229 $ 7,728 $ 8,169 (1) Services net sales include amortization of the deferred value of services bundled in the sales price of certain products",
+        ". Apple Inc. | 2025 Form 10-K | 23 Gross Margin Products and Services gross margin and gross margin percentage for 2025, 2024 and 2023 were as follows (dollars in millions): 2025 2024 2023 Gross margin: Products $ 112,887 $ 109,633 $ 108,803 Services 82,314 71,050 60,345 Total gross margin $ 195,201 $ 180,683 $ 169,148 Gross margin percentage: Products 36.8 % 37.2 % 36.5 % Services 75.4 % 73.9 % 70.8 % Total gross margin percentage 46.9 % 46.2 % 44.1 % Products Gross Margin Products gross margin increased during 2025 compared to 2024 primarily due to favorable costs and a different mix of products, partially offset by tariff costs",
+        "$ 72,559 $ 24,257 $ 29,615 $ &#8212; $ 383,285 Cost of sales ( 92,394 ) ( 54,101 ) ( 39,787 ) ( 11,542 ) ( 16,313 ) &#8212; ( 214,137 ) Research and development &#8212; &#8212; &#8212; &#8212; &#8212; ( 29,915 ) ( 29,915 ) Selling and marketing ( 9,658 ) ( 4,095 ) ( 2,444 ) ( 827 ) ( 1,236 ) &#8212; ( 18,260 ) General and administrative &#8212; &#8212; &#8212; &#8212; &#8212; ( 6,672 ) ( 6,672 ) Operating income/(loss) $ 60,508 $ 36,098 $ 30,328 $ 11,888 $ 12,066 $ ( 36,587 ) $ 114,301 Apple Inc",
+        ". The Company&#8217;s proportion of net sales by disaggregated revenue source was generally consistent for each reportable segment in Note 13, &#8220;Segment Information and Geographic Data&#8221; for 2025, 2024 and 2023, except in Greater China, where iPhone revenue represented a moderately higher proportion of net sales. As of September 27, 2025 and September 28, 2024, the Company had total deferred revenue of $ 13.7 billion and $ 12.8 billion, respectively. As of September 27, 2025, the Company expects 66 % of total deferred revenue to be realized in less than a year, 23 % within one-to-two years, 9 % within two-to-three years and 2 % in greater than three years"
+      ],
+      "matched_keyword": "services"
+    },
+    {
+      "ticker": "AAPL",
+      "query": "What does Apple say about competition and market share?",
+      "expected_keywords": [
+        "competition",
+        "competitive",
+        "market",
+        "android"
+      ],
+      "hit": true,
+      "top_chunks": [
+        ". Competition has been particularly intense as competitors have aggressively cut prices and lowered product margins. Certain competitors have the resources, experience or cost structures to provide products and services at little or no profit or even at a loss. The Company has a minority market share in the global smartphone, personal computer, tablet and wearables markets, and some of the markets in which the Company competes have from time to time experienced little to no growth or contracted overall. If the Company is unable to compete successfully, its business, reputation, results of operations, financial condition and stock price can be materially adversely affected. Apple Inc",
+        ". Apple Inc. | 2025 Form 10-K | 7 Business Risks To remain competitive and stimulate customer demand, the Company must successfully manage frequent introductions and transitions of products and services. Due to the highly volatile and competitive nature of the markets and industries in which the Company competes, the Company must continually introduce new products, services and technologies, enhance existing products and services, effectively stimulate customer demand for new and upgraded products and services, navigate global regulatory requirements and barriers to market access, and successfully manage the transition to these new and upgraded products and services",
+        ". This analysis may be based on factors such as the market position of the Company and its products, the anticipated revenue that may be generated, expected future growth of product sales, and the costs of developing such applications and services. The Company&#8217;s minority market share in the global smartphone, personal computer, tablet and wearables markets can make developers less inclined to develop or upgrade software for the Company&#8217;s products and more inclined to devote their resources to developing and upgrading software for competitors&#8217; products with larger market share. When developers focus their efforts on these competing platforms, the availability and quality of applications for the Company&#8217;s devices can suffer",
+        ". The Company is also currently subject to antitrust investigations and litigation in various jurisdictions around the world, which can result in legal proceedings and claims against the Company that could, individually or in the aggregate, have a material adverse impact on the Company&#8217;s business, results of operations, financial condition and stock price. For example, the Company is subject to civil antitrust lawsuits in the U.S. alleging monopolization or attempted monopolization in the markets for &#8220;performance smartphones&#8221; and &#8220;smartphones&#8221; generally in violation of U.S. antitrust laws. In addition, the Company is the subject of investigations in Europe and other jurisdictions relating to App Store terms and conditions",
+        ". The Company&#8217;s products and services face substantial competition from companies that have significant technical, marketing, distribution and other resources, as well as established hardware, software and service offerings. In addition, the Company faces significant competition as competitors imitate the Company&#8217;s product features and applications within their products to offer more competitive solutions. The Company also expects competition to intensify as competitors imitate the Company&#8217;s approach to providing components seamlessly within their offerings or work collaboratively to offer integrated solutions. Some of the Company&#8217;s competitors have broad product lines, low-priced products, large installed bases of active devices, and large customer bases"
+      ],
+      "matched_keyword": "competition"
+    },
+    {
+      "ticker": "MSFT",
+      "query": "What are Microsoft's cloud revenue growth drivers?",
+      "expected_keywords": [
+        "azure",
+        "cloud",
+        "revenue",
+        "growth"
+      ],
+      "hit": true,
+      "top_chunks": [
+        ". &#8226; Microsoft 365 Commercial products and cloud services revenue increased 14% driven by Microsoft 365 Commercial cloud revenue growth of 15%. &#8226; Microsoft 365 Consumer products and cloud services revenue increased 11% driven by Microsoft 365 Consumer cloud revenue growth of 11%. &#8226; LinkedIn revenue increased 9%. &#8226; Dynamics products and cloud services revenue increased 15% driven by Dynamics 365 revenue growth of 19%. &#8226; Server products and cloud services revenue increased 23% driven by Azure and other cloud services revenue growth of 34%. &#8226; Windows OEM and Devices revenue increased 3%. &#8226; Xbox content and services revenue increased 16%. &#8226; Search and news advertising revenue excluding traffic acquisition costs increased 20%",
+        ". We generate revenue by offering a wide range of cloud-based solutions, content, and other services to people and businesses; licensing and supporting an array of software products; delivering relevant online advertising to a global audience; and designing and selling devices. Our most significant expenses are related to compensating employees; supporting and investing in our cloud-based services, including datacenter operations; designing, manufacturing, marketing, and selling our other products and services; and income taxes. Highlights from fiscal year 2025 compared with fiscal year 2024 included: &#8226; Microsoft Cloud revenue increased 23% to $168.9 billion",
+        "Fiscal Year 2025 Compared with Fiscal Year 2024 Revenue increased $36.6 billion or 15% with growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Microsoft 365 Commercial cloud. More Personal Computing revenue increased driven by Gaming and Search and news advertising. Cost of revenue increased $13.7 billion or 19% driven by growth in Microsoft Cloud. Gross margin increased $22.9 billion or 13% with growth across each of our segments. &#8226; Gross margin percentage decreased slightly driven by Intelligent Cloud, offset in part by More Personal Computing",
+        "Intelligent Cloud Revenue increased $18.8 billion or 21%. &#8226; Server products and cloud services revenue increased $18.6 billion or 23% driven by Azure and other cloud services. Azure and other cloud services revenue grew 34% driven by demand for our portfolio of services. Server products revenue decreased 3% driven by a decrease in transactional purchasing with continued customer shift to cloud offerings. &#8226; Enterprise and partner services revenue increased $166 million or 2% driven by growth in Enterprise Support Services, offset in part by a decline in Industry Solutions. Operating income increased $6.8 billion or 18%. &#8226; Cost of revenue increased $10.6 billion or 36% driven by growth in Azure. &#8226; Gross margin increased $8.2 billion or 14% driven by growth in Azure",
+        ". Operating income increased $10.1 billion or 17%. &#8226; Cost of revenue increased $2.8 billion or 14% driven by growth in Microsoft 365 Commercial cloud. &#8226; Gross margin increased $11.2 billion or 13% driven by growth in Microsoft 365 Commercial cloud. Gross margin percentage decreased slightly primarily driven by the impact of scaling our AI infrastructure, offset in part by efficiency gains in Microsoft 365 Commercial cloud. &#8226; Operating expenses increased $1.1 billion or 4% driven by investments in cloud and AI engineering and commercial sales."
+      ],
+      "matched_keyword": "azure"
+    },
+    {
+      "ticker": "MSFT",
+      "query": "What cybersecurity risks does Microsoft disclose?",
+      "expected_keywords": [
+        "cybersecurity",
+        "security",
+        "breach",
+        "attack",
+        "threat"
+      ],
+      "hit": false,
+      "top_chunks": [],
+      "matched_keyword": null
+    },
+    {
+      "ticker": "MSFT",
+      "query": "How does Microsoft describe its AI strategy?",
+      "expected_keywords": [
+        "artificial intelligence",
+        "ai",
+        "copilot",
+        "openai"
+      ],
+      "hit": true,
+      "top_chunks": [
+        "Issues in the development, deployment, and use of AI may result in reputational or competitive harm or liability . We are building AI into many of our offerings, including our productivity services, and we are also making AI available for our customers to use in solutions that they build. This AI may be developed by Microsoft or others, including our strategic partner, OpenAI. We expect these elements of our business to grow. We envision a future in which AI operating in devices, applications, and the cloud helps our customers be more productive in their work and personal lives. As with many innovations, AI presents risks and challenges that could affect its adoption, and therefore our business. AI algorithms or training methodologies may be flawed",
+        "Business model competition Companies compete with us based on a growing variety of business models. &#8226; A material part of our business involves cloud-based services available across the spectrum of computing devices. We and our competitors continue to devote significant resources to developing and deploying cloud-based strategies and services for consumers and business customers, and pricing and delivery models are evolving. &#8226; We are investing in artificial intelligence (&#8220;AI&#8221;) across the entire company and infusing generative AI capabilities into our consumer and commercial offerings. AI technology and services are a highly competitive and rapidly evolving market, and new competitors continue to enter the market",
+        ". AI algorithms or training methodologies may be flawed. Datasets may be overbroad, insufficient, or contain biased or inaccurate information. Content generated by AI systems may be offensive, illegal, inaccurate, or otherwise harmful. Ineffective or inadequate AI development or deployment practices by Microsoft or others could result in incidents that impair the acceptance of AI solutions, cause harm to individuals, customers, or society, or result in our products and services not working as intended. Human review of certain inputs and outputs may be required, including for agentic AI systems that can take actions autonomously. Our implementation of AI systems could result in legal liability, regulatory action, brand, reputational, or competitive harm, or other adverse impacts",
+        ". &#8226; Search and news advertising revenue excluding traffic acquisition costs increased 20%. Industry Trends and Opportunities Our industry is dynamic and highly competitive, with frequent changes in both technologies and business models. Each industry shift is an opportunity to conceive new products, new technologies, or new ideas that can further transform the industry and our business. At Microsoft, we push the boundaries of what is possible through a broad range of research and development activities that seek to identify and address the changing demands of customers and users, industry trends, and competitive forces. Microsoft and OpenAI maintain a long-term strategic partnership originally established in 2019",
+        ". We will bear significant development and operational costs to build and support the AI models, services, platforms, and infrastructure necessary to meet the needs of our customers. To compete effectively we must also be responsive to technological change, new and potential regulatory developments, and public scrutiny. &#8226; Even as we transition more of our business to infrastructure-, platform-, and software-as-a-service business models, the license-based proprietary software model generates a substantial portion of our software revenue. We bear the costs of converting original ideas into software products through investments in research and development, offsetting these costs with the revenue received from licensing our products"
+      ],
+      "matched_keyword": "ai"
+    },
+    {
+      "ticker": "NVDA",
+      "query": "What are NVIDIA's data center revenue trends?",
+      "expected_keywords": [
+        "data center",
+        "revenue",
+        "gpu",
+        "compute"
+      ],
+      "hit": false,
+      "top_chunks": [],
+      "matched_keyword": null
+    },
+    {
+      "ticker": "NVDA",
+      "query": "What export control risks does NVIDIA face?",
+      "expected_keywords": [
+        "export",
+        "control",
+        "china",
+        "regulation",
+        "license"
+      ],
+      "hit": false,
+      "top_chunks": [],
+      "matched_keyword": null
+    },
+    {
+      "ticker": "GOOGL",
+      "query": "How does Alphabet describe advertising revenue risks?",
+      "expected_keywords": [
+        "advertising",
+        "revenue",
+        "search",
+        "competition"
+      ],
+      "hit": true,
+      "top_chunks": [
+        "RISK FACTORS Our operations and financial results are subject to various risks and uncertainties, including but not limited to those described below, which could harm our business, reputation, financial condition, and operating results, and may affect the trading price and price volatility of our Class A and Class C stock. Risks Specific to our Company We generate a significant portion of our revenues from advertising. Reduced spending by advertisers, a loss of partners, shifts in online advertising, new and evolving advertising formats, or new or existing technologies that block ads online or affect our ability to personalize ads could harm our business. We generated more than 70% of total revenues from online advertising in 2025",
+        ". 12. Table of Contents Alphabet Inc. Interruption to, interference with, or failure of our complex information technology and communications systems could hurt our ability to effectively provide our products and services, which could harm our reputation, financial condition, and operating results. The availability of our products and services and fulfillment of our customer contracts depend on the continuing operation of our information technology and communications systems",
+        ". These endeavors involve significant risks and uncertainties, including diversion of resources and management attention from current operations, different monetization models, and the use of alternative investment, governance, or compensation structures that may fail to adequately align incentives across the company or otherwise accomplish their objectives. 9. Table of Contents Alphabet Inc",
+        ". Many of our agreements with our customers and partners, including certain suppliers, require us to defend against certain intellectual property infringement claims and in some cases indemnify them for certain intellectual property infringement claims against them, which could result in increased costs for defending such claims or significant damages if there were an adverse ruling in any such claims. Such customers and partners may also discontinue the use of our products, services, and technologies, as a result of injunctions or otherwise, which could 20. Table of Contents Alphabet Inc. result in loss of revenues and harm our business",
+        ". 29. Table of Contents Alphabet Inc. We use certain metrics to track how well traffic across various properties is monetized as it relates to our advertising revenues: paid clicks and cost-per-click pertain to traffic on Google Search & other properties, while impressions and cost-per-impression pertain to traffic on our Google Network properties. Paid clicks represent engagement by users and include clicks on advertisements by end-users on Google search properties and other Google owned and operated properties including Gmail, Google Maps, and Google Play. Cost-per-click is defined as click-driven revenues divided by our total number of paid clicks and represents the average amount we charge advertisers for each engagement by users"
+      ],
+      "matched_keyword": "advertising"
+    },
+    {
+      "ticker": "GOOGL",
+      "query": "What regulatory and antitrust concerns does Alphabet disclose?",
+      "expected_keywords": [
+        "antitrust",
+        "regulatory",
+        "competition",
+        "doj",
+        "eu"
+      ],
+      "hit": true,
+      "top_chunks": [
+        ". Other We are subject to claims, lawsuits, regulatory and government inquiries and investigations, other proceedings, and consent orders involving competition, intellectual property, data privacy and security, tax and related compliance, labor and employment, commercial disputes, content generated by our users, goods and services offered by advertisers or publishers using our platforms, design of our products and services, personal injury and other tort and nuisance theories, consumer protection, including how we moderate content on our platforms, AI, and other matters. 77. Table of Contents Alphabet Inc. For example, we periodically have data incidents that we report to relevant regulators as required by law",
+        ". The US Department of Justice (DOJ), various states, and other plaintiffs have filed, and may continue to file in the future, several antitrust lawsuits about aspects of our business, including our advertising technologies and practices, the operation and distribution of Google Search, and the operation and distribution of Android operating system and Play Store. If we are unsuccessful in these lawsuits, we could face significant expenses to implement the remedies, and such costs and alterations could harm our business, reputation, financial condition, and operating results. 18. Table of Contents Alphabet Inc. For example, the DOJ and a number of state Attorneys General filed a lawsuit concerning our Search and Search advertising practices and our compliance with US antitrust laws",
+        ". Many of our agreements with our customers and partners, including certain suppliers, require us to defend against certain intellectual property infringement claims and in some cases indemnify them for certain intellectual property infringement claims against them, which could result in increased costs for defending such claims or significant damages if there were an adverse ruling in any such claims. Such customers and partners may also discontinue the use of our products, services, and technologies, as a result of injunctions or otherwise, which could 20. Table of Contents Alphabet Inc. result in loss of revenues and harm our business",
+        ". We expense legal fees in the period in which they are incurred. 75. Table of Contents Alphabet Inc. Antitrust Matters We are subject to formal and informal inquiries and investigations as well as litigation on various competition matters by regulatory authorities and private parties in the US, Europe, and other jurisdictions globally, including the following: &#8226; Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a &#8364; 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine",
+        ". We recognized a charge of 76. Table of Contents Alphabet Inc. $ 3.5 billion in the third quarter of 2025, and we placed bank guarantees in the fourth quarter of 2025 in lieu of cash payment. In September 2024, the UK also issued a Statement of Objections concerning Google's advertising technology and its compliance with UK antitrust laws, to which we responded. &#8226; Google Play: In July 2021, a number of state Attorneys General filed a lawsuit in the US District Court for the Northern District of California concerning Google&#8217;s operation of Android and Google Play and its compliance with US antitrust laws and state antitrust and consumer protection laws"
+      ],
+      "matched_keyword": "regulatory"
+    }
+  ]
+}
