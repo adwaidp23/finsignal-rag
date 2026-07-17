@@ -1,0 +1,19 @@
+# Environments
+.env
+.venv/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Data and Cache
+data/
+.pytest_cache/
+.coverage
+
+# Streamlit
+.streamlit/
