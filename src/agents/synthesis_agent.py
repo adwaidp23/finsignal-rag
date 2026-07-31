@@ -43,16 +43,12 @@ logger = logging.getLogger(__name__)
 
 SYNTHESIS_SYSTEM_PROMPT = """You are a financial research analyst assistant.
 Your role is to identify divergences between news sentiment and fundamental
-disclosures in filings — NOT to make buy or sell recommendations.
+disclosures in SEC filings — NOT to make buy or sell recommendations.
 
 Given:
   - A ticker symbol
   - Recent news sentiment summary (positive/negative/neutral counts and scores)
-  - Relevant excerpts from filings (if available)
-
-Note: If filing excerpts are unavailable (e.g., for non-US equities where US SEC filings do not apply),
-synthesize the news sentiment clearly, note that SEC 10-K disclosures apply to US-listed companies,
-and assess divergence level as "none" or "low" unless specific risks are noted.
+  - Relevant excerpts from SEC filings (10-K/10-Q)
 
 Produce a structured JSON report with these exact keys:
 {
@@ -60,11 +56,11 @@ Produce a structured JSON report with these exact keys:
   "analysis_date": "YYYY-MM-DD",
   "sentiment_signal": "bullish" | "bearish" | "mixed" | "neutral",
   "sentiment_summary": "1-2 sentence plain-English summary of the news sentiment",
-  "fundamentals_summary": "1-2 sentence summary of fundamental disclosures or note about SEC filing availability",
+  "fundamentals_summary": "1-2 sentence summary of what the filings say",
   "divergence_assessment": "1-2 sentences describing any gap between sentiment and fundamentals",
   "divergence_level": "high" | "medium" | "low" | "none",
   "key_risks": ["risk 1", "risk 2", "risk 3"],
-  "data_sources": ["Google News RSS", "Yahoo Finance RSS"] (list what data was used),
+  "data_sources": ["SEC 10-K", "Google News RSS"] (list what data was used),
   "disclaimer": "This analysis is for informational purposes only and does not constitute financial advice."
 }
 
@@ -225,7 +221,7 @@ Generate the JSON divergence report now."""
     @staticmethod
     def _format_context(context: list[dict]) -> str:
         if not context:
-            return "No SEC 10-K filing context available (SEC 10-K disclosures apply to US-listed stocks only)."
+            return "No filing context available."
         parts = []
         for i, c in enumerate(context[:5], 1):  # Cap at 5 chunks to stay under token limit
             meta = c.get("metadata", {})

@@ -40,13 +40,6 @@ RAW_FILINGS_DIR = Path(__file__).resolve().parents[2] / "data" / "sec_filings"
 SEC_SLEEP = 0.15
 
 
-NON_US_SUFFIXES = (".SS", ".PA", ".AS", ".BR", ".NS", ".L", ".HK", ".TW", ".KS", ".BO", ".TO", ".DE")
-
-
-def is_non_us_ticker(ticker: str) -> bool:
-    return any(ticker.upper().endswith(suffix) for suffix in NON_US_SUFFIXES)
-
-
 class EdgarFetcher:
     """
     Downloads filings via sec-edgar-downloader, parses HTML → plain text,
@@ -89,11 +82,6 @@ class EdgarFetcher:
             {filing_type: number_of_new_chunks_inserted}
         """
         filing_types = filing_types or ["10-K", "10-Q"]
-
-        if is_non_us_ticker(ticker):
-            logger.info("Skipping SEC EDGAR download for non-US ticker %s (SEC filings are US-only)", ticker)
-            return {ftype: 0 for ftype in filing_types}
-
         results: dict[str, int] = {}
 
         for filing_type in filing_types:

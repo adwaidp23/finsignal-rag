@@ -47,36 +47,20 @@ logging.basicConfig(
 logger = logging.getLogger("ingestion")
 
 # ---------------------------------------------------------------------------
-# Default watchlist across all supported markets
+# Default watchlist
 # ---------------------------------------------------------------------------
 
 DEFAULT_WATCHLIST: dict[str, str] = {
-    # NASDAQ
     "AAPL": "Apple Inc",
     "MSFT": "Microsoft",
     "GOOGL": "Alphabet Google",
     "NVDA": "NVIDIA",
+    "AMZN": "Amazon",
     "TSLA": "Tesla",
-    # NYSE
+    "META": "Meta Platforms",
     "JPM": "JPMorgan Chase",
     "BRK-B": "Berkshire Hathaway",
-    "WMT": "Walmart",
-    "V": "Visa",
-    "DIS": "Walt Disney",
-    # Shanghai
-    "600519.SS": "Kweichow Moutai",
-    "601398.SS": "ICBC",
-    "601857.SS": "PetroChina",
-    # Euronext
-    "MC.PA": "LVMH",
-    "RMS.PA": "Hermes International",
-    "AIR.PA": "Airbus",
-    "ASML.AS": "ASML Holding",
-    # NSE
-    "RELIANCE.NS": "Reliance Industries",
-    "TCS.NS": "Tata Consultancy Services",
-    "HDFCBANK.NS": "HDFC Bank",
-    "INFY.NS": "Infosys",
+    "UNH": "UnitedHealth Group",
 }
 
 
@@ -136,15 +120,7 @@ def main():
 
 def _build_watchlist(args) -> dict[str, str]:
     if args.tickers:
-        return {t.upper(): DEFAULT_WATCHLIST.get(t.upper(), t.upper()) for t in args.tickers}
-    if args.market:
-        try:
-            from app.streamlit_app import MARKETS
-            m_watchlist = MARKETS.get(args.market, {})
-            if m_watchlist:
-                return m_watchlist
-        except Exception:
-            pass
+        return {t.upper(): t.upper() for t in args.tickers}
     return DEFAULT_WATCHLIST
 
 
@@ -154,11 +130,6 @@ def _parse_args():
         "--tickers",
         nargs="+",
         help="Ticker symbols to process (default: full watchlist)",
-    )
-    parser.add_argument(
-        "--market",
-        choices=["NASDAQ", "NYSE", "Shanghai", "Euronext", "NSE"],
-        help="Target market to ingest all tickers for",
     )
     parser.add_argument(
         "--rss-only",

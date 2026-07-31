@@ -20,7 +20,6 @@ import logging
 import time
 from datetime import datetime, timezone
 from typing import Optional
-from urllib.parse import quote_plus
 
 import feedparser
 
@@ -34,14 +33,13 @@ logger = logging.getLogger(__name__)
 
 GOOGLE_NEWS_RSS = (
     "https://news.google.com/rss/search"
-    "?q={query}&hl=en-US&gl=US&ceid=US:en"
+    "?q={query}+stock+when:7d&hl=en-US&gl=US&ceid=US:en"
 )
 
 YAHOO_FINANCE_RSS = "https://feeds.finance.yahoo.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US"
 
 # User-agent to avoid being blocked by RSS endpoints
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; SentimentBot/1.0)"}
-
 
 
 class RSSFetcher:
@@ -110,12 +108,11 @@ class RSSFetcher:
     # ------------------------------------------------------------------
 
     def _fetch_yahoo(self, ticker: str) -> list[Headline]:
-        url = YAHOO_FINANCE_RSS.format(ticker=quote_plus(ticker))
+        url = YAHOO_FINANCE_RSS.format(ticker=ticker)
         return self._parse_feed(url, ticker, source="Yahoo Finance")
 
     def _fetch_google_news(self, query: str, ticker: str) -> list[Headline]:
-        search_term = f"{query} stock" if not query.lower().endswith("stock") else query
-        url = GOOGLE_NEWS_RSS.format(query=quote_plus(search_term))
+        url = GOOGLE_NEWS_RSS.format(query=query.replace(" ", "+"))
         return self._parse_feed(url, ticker, source="Google News")
 
     def _parse_feed(self, url: str, ticker: str, source: str) -> list[Headline]:

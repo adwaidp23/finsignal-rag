@@ -833,25 +833,15 @@ def render_filing_context(ticker: str):
     chunks = db.get_filing_chunks(ticker)
 
     if not chunks:
-        from src.ingestion.edgar_fetcher import is_non_us_ticker
-        if is_non_us_ticker(ticker):
-            st.markdown(f"""
-            <div class="empty-state">
-              <div class="empty-icon">🌐</div>
-              <div class="empty-title">Non-US Equity (SEC Filings N/A)</div>
-              <div class="empty-body"><strong>{ticker}</strong> is an international equity. SEC 10-K / 10-Q filings are standard for US-listed companies only. News sentiment and backtesting remain fully functional.</div>
-            </div>
-            """, unsafe_allow_html=True)
-        else:
-            st.markdown(f"""
-            <div class="empty-state">
-              <div class="empty-icon">📄</div>
-              <div class="empty-title">No Filing Data</div>
-              <div class="empty-body">No 10-K chunks indexed for <strong>{ticker}</strong>.
-              US-listed companies only. Run EDGAR ingestion to populate.</div>
-              <code class="empty-cmd">python scripts/run_ingestion.py --tickers {ticker} --filings 10-K</code>
-            </div>
-            """, unsafe_allow_html=True)
+        st.markdown(f"""
+        <div class="empty-state">
+          <div class="empty-icon">📄</div>
+          <div class="empty-title">No Filing Data</div>
+          <div class="empty-body">No 10-K chunks indexed for <strong>{ticker}</strong>.
+          US-listed companies only. Run EDGAR ingestion to populate.</div>
+          <code class="empty-cmd">python scripts/run_ingestion.py --tickers {ticker} --filings 10-K</code>
+        </div>
+        """, unsafe_allow_html=True)
         return
 
     filings_seen = set()
