@@ -437,22 +437,27 @@ def _skeleton_table():
         """, unsafe_allow_html=True)
 
 
-@st.cache_data(ttl=300, show_spinner=False)
+@st.cache_data(ttl=15, show_spinner=False)
 def get_sentiment_summary(ticker: str, days_back: int = 7):
     db = load_db()
     since = (date.today() - timedelta(days=days_back)).isoformat()
-    return db.get_sentiment_summary(ticker, since=since)
+    summary = db.get_sentiment_summary(ticker, since=since)
+    if not summary:
+        summary = db.get_sentiment_summary(ticker, since=None)
+    return summary
 
 
-@st.cache_data(ttl=300, show_spinner=False)
+@st.cache_data(ttl=15, show_spinner=False)
 def get_headlines(ticker: str, days_back: int = 7):
     db = load_db()
     since = (date.today() - timedelta(days=days_back)).isoformat()
     rows = db.get_headlines_with_sentiment(ticker, since=since)
+    if not rows:
+        rows = db.get_headlines_with_sentiment(ticker, since=None)
     return [dict(r) for r in rows]
 
 
-@st.cache_data(ttl=300, show_spinner=False)
+@st.cache_data(ttl=15, show_spinner=False)
 def get_filing_chunks_cached(ticker: str):
     db = load_db()
     return db.get_filing_chunks(ticker)
@@ -485,6 +490,10 @@ def render_sidebar():
         )
 
         days_back = st.slider("Lookback Window (days)", 3, 30, 7)
+
+        if st.button("🔄 Refresh Data", use_container_width=True, help="Clear cache and reload latest data"):
+            st.cache_data.clear()
+            st.rerun()
 
         st.markdown('<div class="sidebar-divider"></div>', unsafe_allow_html=True)
         st.markdown('<div class="card-title">Data Sources</div>', unsafe_allow_html=True)
