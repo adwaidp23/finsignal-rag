@@ -41,6 +41,10 @@ class Backtester:
         try:
             ticker_obj = yf.Ticker(ticker)
             df = ticker_obj.history(start=start_date, end=end_date)
+            if df.empty and "-" in ticker:
+                alt_ticker = ticker.replace("-", ".")
+                logger.info(f"Retrying yfinance with alternate ticker format {alt_ticker}")
+                df = yf.Ticker(alt_ticker).history(start=start_date, end=end_date)
             if df.empty:
                 logger.warning(f"No price history returned for {ticker}")
                 return pd.DataFrame(columns=["Close"])
